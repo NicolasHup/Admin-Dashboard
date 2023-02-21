@@ -1,12 +1,13 @@
 body{
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 2fr 7fr;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 7fr;
     grid-template-areas: 
         "sidebar header"
         "sidebar content";
@@ -14,12 +15,28 @@ body{
 
 .header{
     grid-area: header;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-area: 1fr 1fr;
+    grid-template-areas: 
+        "search morgan"
+        "hey-there button-section";
 }
 
 .sidebar{
     grid-area: sidebar;
+    display: grid;
+    border-radius: 0.5px;
+    background-color: rgb(63, 63, 230);
 }
 
-.content{
+.main-content{
     grid-area: content;
+    background-color: #b129aab2;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas: 
+        "projrcts announcements"
+        "content-inside announcement-details";
 }
