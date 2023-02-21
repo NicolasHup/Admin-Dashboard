@@ -35,7 +35,7 @@ body{
     background-color: #b129aab2;
     display: grid;
     grid-template-columns: 5fr 1fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 9fr;
     grid-template-areas: 
         "projrcts announcements"
         "content-inside announcement-details";
