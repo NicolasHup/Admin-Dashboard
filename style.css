@@ -7,7 +7,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 7fr;
+    grid-template-rows: 2fr 9fr;
     grid-template-areas: 
         "sidebar header"
         "sidebar content";
@@ -17,7 +17,7 @@ body{
     grid-area: header;
     display: grid;
     grid-template-columns: 5fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
     grid-template-areas: 
         "search morgan"
         "hey-there button-section";
@@ -25,22 +25,58 @@ body{
 
 div.header-left1{
     grid-area: search;
-    background: green;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
 }
 
+
+input#gsearch{
+    width: 600px;
+    height: 25px;
+    background: #e2e8f0;
+    border: 0px;
+    border-radius: 12px;
+}
+
+div.header-left1 img{
+    padding-right: 10px;
+    height: 19px;
+}
+
+div.header-right1 img{
+    padding-right: 20px;
+    height: 19px;
+}
 div.header-right1{
     grid-area: morgan;
-    background: yellow;
+    display: flex;
+    align-items: center;
+}
 
+img#right{
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
 }
 
 div.header-left2{
     grid-area: hey-there;
-    background: rgb(192, 105, 54);
 }
 div.header-right2{
     grid-area: button-section;
-    background: rgb(54, 192, 72);
+    display: flex;
+    align-items: center;
+}
+
+div.header-right2 button{
+    width: 65px;
+    height: 28px;
+    margin-right: 25px;
+    border-radius: 15px;
+    border: 0px;
+    color: white;
+    background-color: #0ea5e9;
 }
 
 .sidebar{
@@ -52,7 +88,7 @@ div.header-right2{
         "side-1"
         "side2";
     border-radius: 0.5px;
-    background-color: rgb(49, 126, 228);
+    background-color: #0ea5e9;
 }
 
 div.logo{
@@ -82,7 +118,7 @@ div.logo{
 
 .main-content{
     grid-area: content;
-    background-color: #b129aab2;
+    background-color:#e2e8f0;
     display: grid;
     grid-template-columns: 5fr 1fr;
     grid-template-rows: 1fr 9fr;
