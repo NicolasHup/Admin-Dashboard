@@ -166,3 +166,15 @@ span.announcements{
     font-weight: bold;
     
 }
+
+div.card{
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+}
+
+div.content-left{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
