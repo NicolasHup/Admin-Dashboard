@@ -16,7 +16,7 @@ body{
 .header{
     grid-area: header;
     display: grid;
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: 6fr 3fr;
     grid-template-rows: 2fr 2fr;
     grid-template-areas: 
         "search morgan"
@@ -40,7 +40,7 @@ input#gsearch{
 }
 
 div.header-left1 img{
-    padding-right: 10px;
+    padding-right: 30px;
     height: 19px;
 }
 
@@ -52,6 +52,7 @@ div.header-right1{
     grid-area: morgan;
     display: flex;
     align-items: center;
+    padding-left: 70px;
 }
 
 img#right{
@@ -60,9 +61,35 @@ img#right{
     border-radius: 30%;
 }
 
+img#left{
+    margin-right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 30%;
+}
+
 div.header-left2{
     grid-area: hey-there;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
 }
+div.header-left2 span{
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+span.left-text{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+span.left-text2{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
 div.header-right2{
     grid-area: button-section;
     display: flex;
@@ -70,8 +97,8 @@ div.header-right2{
 }
 
 div.header-right2 button{
-    width: 65px;
-    height: 28px;
+    width: 80px;
+    height: 35px;
     margin-right: 25px;
     border-radius: 15px;
     border: 0px;
@@ -120,9 +147,22 @@ div.logo{
     grid-area: content;
     background-color:#e2e8f0;
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 4fr 1.3fr;
     grid-template-rows: 1fr 9fr;
     grid-template-areas: 
         "projrcts announcements"
         "content-inside announcement-details";
+}
+
+span.projects{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-left: 20px;
+}
+span.announcements{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    
 }
