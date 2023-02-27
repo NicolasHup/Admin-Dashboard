@@ -7,7 +7,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 2fr 9fr;
+    grid-template-rows: 2fr 13fr;
     grid-template-areas: 
         "sidebar header"
         "sidebar content";
@@ -148,7 +148,7 @@ div.logo{
     background-color:#e2e8f0;
     display: grid;
     grid-template-columns: 4fr 1.3fr;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 1fr 13fr;
     grid-template-areas: 
         "projrcts announcements"
         "content-inside announcement-details";
@@ -163,18 +163,40 @@ span.projects{
 span.announcements{
     display: flex;
     align-items: center;
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
 
 div.card{
   background-color: #FFFFFF;
   color: black;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 40fr;
+  border-radius: 10px;
 }
 
 div.content-left{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 10px;
+    row-gap: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div.card-images{
+    display: flex;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    padding-left: 15px;
+}
+
+div.card-images img{
+    align-self: flex-end;
+    padding-right: 10px;
+}
+
+p{
+    padding-left: 15px;
+    padding-right: 15px;
 }
