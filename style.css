@@ -197,6 +197,12 @@ div.card-images img{
 }
 
 p{
+    margin: 0px;
     padding-left: 15px;
     padding-right: 15px;
 }
+
+p.title{
+    margin-top: 35px;
+}
+
