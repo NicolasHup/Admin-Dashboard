@@ -164,7 +164,7 @@ span.announcements{
     display: flex;
     align-items: center;
     font-weight: bold; 
-    padding-left: 25px;  
+    padding-left: 19px;  
 }
 
 div.card{
@@ -210,21 +210,37 @@ p.title{
 
 div.content-right{
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 60px;
+    grid-template-rows: 1.4fr 0.1fr 1fr;
+    grid-template-areas: 
+        "announ"
+        "trend"
+        "announ2";
     margin-bottom: 50px;
 }
 
 div.card-right{
+    grid-area: announ;
+    display: grid;
     background-color: #FFFFFF;
     color: black;
     font-size: 13px;
     border-radius: 10px;
     margin-right: 70px;
     margin-left: 20px;
+    margin-bottom: 60px;;
+}
+
+div.seperator{
+    width: 240px;
+    height: 1px;
+    background-color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+    
 }
 
 div.card-right2{
+    grid-area: announ2;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     background-color: #FFFFFF;
@@ -233,6 +249,12 @@ div.card-right2{
     border-radius: 10px;
     margin-right: 70px;
     margin-left: 20px;
+}
+
+span.trendinding{
+    grid-area: trend;
+    font-weight: bold; 
+    padding-left: 19px;
 }
 
 
