@@ -242,7 +242,7 @@ div.seperator{
 div.card-right2{
     grid-area: announ2;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     background-color: #FFFFFF;
     color: black;
     font-size: 13px;
@@ -257,6 +257,21 @@ span.trendinding{
     padding-left: 19px;
 }
 
+div.card-right2-content{
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
 
+div.card-right2txt{
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    padding-left: 15px;
+}
 
+span.first{
+    font-weight: bolder;
+    padding-bottom: 3px;
+}
 
